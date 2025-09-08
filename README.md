@@ -8,6 +8,7 @@ This bot provides:
 - Answers to common questions
 - Supports Persian and Turkish languages
 
+<<<<<<< HEAD
 ## Installation & Run
 
 1. Clone the repository:
@@ -52,3 +53,5 @@ docker run -e BOT_TOKEN=your_telegram_bot_token baby-bot
 ---
 
 میخوای همین الان این فایل را **بسازیم و بعد Push کنیم به GitHub**؟
+=======
+>>>>>>> f1cf2e7 (اضافه شدن ویزاد و دریافت فایل ها)
