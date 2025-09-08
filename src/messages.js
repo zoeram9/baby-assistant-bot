@@ -1,13 +1,77 @@
 const messages = {
-    fa: {
-      welcome: "سلام! من دستیار مادران هستم. چطور می‌توانم کمکتان کنم؟",
-      tip: "نکته امروز: نوزاد خود را هر ۳ ساعت شیر دهید."
-    },
-    tr: {
-      welcome: "Merhaba! Ben anne asistanıyım. Size nasıl yardımcı olabilirim?",
-      tip: "Günün ipucu: Bebeğinizi her 3 saatte bir besleyin."
-    }
-  };
-  
-  module.exports = messages;
-  
+  fa: {
+    welcome_with_name: "سلام! به بات دستیار مادران خوش آمدید 🌸",
+    welcome_back: "سلام {name}! به بات دستیار مادران خوش آمدید 🌸",
+    profile: "👤 پروفایل من",
+    edit_profile: "✏️ ویرایش پروفایل",
+    features: "📋 امکانات بات", 
+    settings: "⚙️ تنظیمات",
+    change_language: "🌐 تغییر زبان",
+    choose_language: "لطفاً زبان خود را انتخاب کنید:",
+    language_changed: "✅ زبان به فارسی تغییر کرد",
+    register_command: "برای ثبت‌نام از دستور /register استفاده کنید.",
+    not_registered: "شما ثبت‌نام نکرده‌اید! لطفاً اول ثبت‌نام کنید.",
+    profile_title: "👤 پروفایل شما:\n\n",
+    name: "📝 نام",
+    birth_date: "📅 تاریخ تولد نوزاد", 
+    gender: "👶 جنسیت",
+    birth_weight: "⚖️ وزن تولد",
+    birth_height: "📏 قد تولد",
+    current_weight: "⚖️ وزن فعلی",
+    language: "🌐 زبان",
+    edit_what: "چه چیزی رو می‌خوای ویرایش کنی؟",
+    boy: "پسر 👶",
+    girl: "دختر 👧",
+    kg: " kg",
+    cm: " cm",
+    features_text: "امکانات بات:\n• مشاهده پروفایل\n• ویرایش پروفایل\n• نکات روزانه\n• یادآوری‌ها",
+    settings_text: "تنظیمات:\n• تغییر زبان\n• اطلاع‌رسانی‌ها",
+    select_year: "📅 سال تولد نوزاد رو انتخاب کن:",
+    select_month: "📅 ماه تولد رو انتخاب کن:",
+    select_day: "📅 روز تولد رو انتخاب کن:",
+    years: ["1401", "1402", "1403", "1404"],
+    months: ["فروردین", "اردیبهشت", "خرداد", "تیر", "مرداد", "شهریور", "مهر", "آبان", "آذر", "دی", "بهمن", "اسفند"],
+    days: ["1 ام", "2 ام", "3 ام", "4 ام", "5 ام", "6 ام", "7 ام", "8 ام", "9 ام", "10 ام", "11 ام", "12 ام", "13 ام", "14 ام", "15 ام", "16 ام", "17 ام", "18 ام", "19 ام", "20 ام", "21 ام", "22 ام", "23 ام", "24 ام", "25 ام", "26 ام", "27 ام", "28 ام", "29 ام", "30 ام", "31 ام"]
+  },
+  tr: {
+    welcome_with_name: "Merhaba! Anne asistan botuna hoş geldiniz 🌸",
+    welcome_back: "Merhaba {name}! Anne asistan botuna hoş geldiniz 🌸",
+    profile: "👤 Profiliniz",
+    edit_profile: "✏️ Profili Düzenle", 
+    features: "📋 Bot Özellikleri",
+    settings: "⚙️ Ayarlar",
+    change_language: "🌐 Dil Değiştir",
+    choose_language: "Lütfen dilinizi seçin:",
+    language_changed: "✅ Dil Türkçe olarak değiştirildi",
+    register_command: "Kayıt olmak için /register komutunu kullanın.",
+    not_registered: "Kayıtlı değilsiniz! Lütfen önce kayıt olun.",
+    profile_title: "👤 Profiliniz:\n\n",
+    name: "📝 İsim",
+    birth_date: "📅 Bebeğin Doğum Tarihi",
+    gender: "👶 Cinsiyet",
+    birth_weight: "⚖️ Doğum Ağırlığı",
+    birth_height: "📏 Doğum Boyu",
+    current_weight: "⚖️ Mevcut Ağırlık",
+    language: "🌐 Dil",
+    edit_what: "Neyi düzenlemek istiyorsunuz?",
+    boy: "Erkek 👶",
+    girl: "Kız 👧", 
+    kg: " kg",
+    cm: " cm",
+    features_text: "Bot Özellikleri:\n• Profili görüntüleme\n• Profil düzenleme\n• Günlük ipuçları\n• Hatırlatıcılar",
+    settings_text: "Ayarlar:\n• Dil değiştirme\n• Bildirimler",
+    select_year: "📅 Bebeğin doğum yılını seçin:",
+    select_month: "📅 Doğum ayını seçin:",
+    select_day: "📅 Doğum gününü seçin:",
+    years: ["2022", "2023", "2024", "2025"],
+    months: ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"],
+    days: ["1.", "2.", "3.", "4.", "5.", "6.", "7.", "8.", "9.", "10.", "11.", "12.", "13.", "14.", "15.", "16.", "17.", "18.", "19.", "20.", "21.", "22.", "23.", "24.", "25.", "26.", "27.", "28.", "29.", "30.", "31."]
+  }
+};
+
+// تابع کمکی برای گرفتن پیام بر اساس زبان
+function getMessage(lang, key) {
+  return messages[lang][key] || messages['fa'][key];
+}
+
+module.exports = { messages, getMessage };
